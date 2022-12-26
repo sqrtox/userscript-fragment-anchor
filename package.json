@@ -1,0 +1,41 @@
+{
+  "name": "userscript-fragment-anchor",
+  "version": "1.0.0",
+  "description": "A user script that lists the ids of all elements on the page and adds a button to anchor to that element.",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "node -r esbuild-register scripts/build.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqrtox/userscript-fragment-anchor.git"
+  },
+  "keywords": [
+    "userscript"
+  ],
+  "author": "sqrtox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sqrtox/userscript-fragment-anchor/issues"
+  },
+  "homepage": "https://github.com/sqrtox/userscript-fragment-anchor#readme",
+  "devDependencies": {
+    "@types/greasemonkey": "^4.0.4",
+    "@types/node": "^18.11.17",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "esbuild": "^0.16.10",
+    "esbuild-register": "^3.4.2",
+    "eslint": "^8.30.0",
+    "eslint-plugin-react": "^7.31.11",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@mui/material": "^5.11.1",
+    "change-case": "^4.1.2",
+    "userscript-metadata": "^1.1.0"
+  }
+}
